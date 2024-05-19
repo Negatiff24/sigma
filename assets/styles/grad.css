@@ -1,0 +1,57 @@
+.grad {
+    min-height: 100vh;
+    background: linear-gradient(80deg, rgba(81,0,255,1), rgba(72,0,120,0.9416141456582633), rgba(0,241,255,1));
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    position: relative;
+}
+
+.triangle__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 200px 99vw 0 0px;
+    border-color: #222222 transparent transparent transparent;
+    transform: rotate(0deg);
+ }
+
+ .triangle__bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0px 200px 99vw;
+    border-color: transparent transparent #222222 transparent;
+    transform: rotate(0deg);
+ }
+
+ .container.-grad {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .grad__title {
+    color: white;
+    font-size: 66px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
