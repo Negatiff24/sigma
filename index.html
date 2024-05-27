@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>playground</title>
+        <title>store</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="./assets/styles/base.css">
         <link rel="stylesheet" type="text/css" href="./assets/styles/container.css">
@@ -21,6 +21,19 @@
                 </div>
                 <div class="header__logo">
                     <p class="header__text">naebalovo.inc</p>
+                </div>
+                <div class="header__right">
+                    <div class="header__acc-border-wrap">
+                        <div class="header__acc">
+                            <div class="header__balance">
+                                <p class="balance__text">у вас на счету</p>
+                                <p class="balance__money">10000 руб</p>
+                            </div>
+                            <button class="header__btn" onclick="goToAcc()">
+                                <img src="./assets/img/catgun.jpg" alt="" class="acc__logo">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -103,7 +116,7 @@
         <section class="grad">
             <div class="triangle__top"></div>
             <div class="container -grad">
-                <h2 class="grad__title">ЁМАЁ КАК ЖЕ БАЛДЁЖНО ВЫГЛЯДИТ</h2>
+                <button class="grad__title" onclick="goToCatalog()">ПЕРЕЙТИ К КАТАЛОГУ</button>
             </div>
             <div class="triangle__bottom"></div>
         </section>
