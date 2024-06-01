@@ -24,16 +24,42 @@
                         <div class="del"></div>
                         <div class="card__mid">
                             <p class="card__text">у вас на счету:</p>
-                            <p class="card__money">10000 руб</p>
+                            <div class="card__midb">
+                                <p id="moneyAmount" class="card__money">10000 руб</p>
+                                <button onclick="showInputField()" class="card__plus">
+                                    <div class="plus"></div>
+                                </button>
+                            </div>
+                            <div class="input-container">
+                                <input class="input__money" type="number" id="newAmount" placeholder="Введите сумму">
+                                <button class="input__btn" onclick="updateMoney()">OK</button>
+                            </div>
+                            <div class="error-message" id="error-message">Сумма не может быть отрицательной!</div>
                         </div>
                         <div class="del"></div>
                         <div class="card__bottom">
-                            <p class="card__bonus">бонусных карт в наличии:</p>
+                            <div class="card__bottomm">
+                                <p class="card__bonus">бонусных карт в наличии:</p>
+                                <button onclick="showBonusField()" class="card__plus">
+                                    <div class="plus"></div>
+                                </button>
+                            </div>
+                            <div id="selectedBonus" class="selected-bonus"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="modal" id="bonusModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeBonusField()">&times;</span>
+                <p class="modal__text">Выберите бонусную карту:</p>
+                <button class="modal__btn" onclick="applyBonus(5)">5% скидка</button>
+                <button class="modal__btn" onclick="applyBonus(10)">10% скидка</button>
+                <button class="modal__btn" onclick="applyBonus(15)">15% скидка</button>
+            </div>
+        </div>
 
         <script type="text/javascript" src="../assets/scripts/main.js"></script>
     </body>

@@ -1,0 +1,267 @@
+.header {
+    height: 6vh;
+    width: 100%;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+}
+
+.container.-header {  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__logo {
+    width: 15%;
+}
+
+.header__text {
+    font-size: 24px;
+    background: -webkit-linear-gradient(45deg, rgba(81,0,255,1) 0%, rgba(0,241,255,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__input {
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.header__cart {
+    width: 15%;
+    color: white;
+    background: none;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 7px;
+}
+
+.cart__countt {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 20px;
+    min-width: 20px;
+    background-color: rgba(81,0,255,1);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart__count { 
+    color: white;
+}
+
+.main {
+    min-height: 95vh;
+    width: 100%;
+    background-color: #222222;
+}
+
+.container.-main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+}
+
+.main__left {
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    width: 21%;
+    padding: 7px;
+}
+
+.main__text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.category-btn {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    text-align: left;
+    padding: 0;
+}
+
+.reset__btn {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+    padding: 0;
+}
+
+.hero__prod {
+    width: 78%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    background-color: #2b2b2b;
+    border-radius: 20px;
+}
+
+.card{
+    width: 95%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    margin-top: 20px;
+    background: rgb(81,0,255);
+    background: linear-gradient(245deg, rgba(81,0,255,1) 0%, rgba(72,0,120,0.9416141456582633) 29%, rgba(0,241,255,1) 100%);
+}
+
+.card__img{
+    border-radius: 20px;
+    width: 225px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__right{
+    width: 75%;
+}
+
+.card__title, .card__text, .card__price, .card__total-price {
+    margin: 10px 0;
+    color: white;
+}
+
+.price__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom__right {
+    width: 33%;
+}
+
+.card__quantity {
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+
+.card__button {
+    color: white;
+    background: none;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+/* Стиль для модального окна корзины */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content-border-wrap {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    margin: 15% auto;
+    padding: 5px;
+    background: linear-gradient(80deg, rgba(81,0,255,1), rgba(72,0,120,0.9416141456582633), rgba(0,241,255,1));
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+.modal__content {
+    background-color: #222222;
+    /* margin: 15% auto; */
+    padding: 20px;
+    /* width: 80%;
+    max-width: 600px; */
+    border-radius: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart__title {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart__name {
+    width: 70%;
+    color: white;
+}
+
+.cart__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__price {
+    width: 26%;
+    color: white;
+}
+
+.checkout__btn {
+    color: white;
+    background: none;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+#totalPrice {
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

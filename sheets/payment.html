@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Оплата</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/base.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/container.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/payment.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header class="header">
+        <div class="container -header">
+            <div class="header__burger">
+                <div class="burger">
+                    <div class="burger__stick"></div>
+                    <div class="burger__stick"></div>
+                    <div class="burger__stick"></div>
+                </div>
+            </div>
+            <div class="header__logo">
+                <p class="header__text">naebalovo.inc</p>
+            </div>
+            <div class="header__right">
+                <div class="header__acc-border-wrap">
+                    <div class="header__acc">
+                        <div class="header__balance">
+                            <p class="balance__text">у вас на счету</p>
+                            <p id="moneyAmount" class="balance__money">10000 руб</p>
+                        </div>
+                        <button class="header__btn">
+                            <img src="../assets/img/catgun.jpg" alt="" class="acc__logo">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pay">
+        <div class="container">
+            <h2 class="pay__title">Корзина</h2>
+            <div id="cartItems" class="cart-items"></div>
+            <div class="pay__bottom">
+                <div class="pay__left">
+                    <p id="totalPrice" class="total-price"></p>
+                    <div>
+                        <input type="checkbox" id="useBonusCard" /> 
+                        <label for="useBonusCard" class="pay__inp">Использовать бонусную карту</label>
+                    </div>
+                    <p id="selectedBonus"></p> <!-- Элемент для отображения выбранной бонусной карты -->
+                    <div id="discountInfo"></div>
+                    <div id="finalPrice"></div>
+                </div>             
+                <button id="payBtn" class="pay-btn">Оплатить</button>
+            </div>
+            <p id="paymentResult" class="payment-result"></p>
+        </div>
+    </section>
+    
+    <script src="../assets/scripts/main.js"></script>
+    <script src="../assets/scripts/payment.js"></script>
+</body>
+</html>

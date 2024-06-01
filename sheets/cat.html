@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>store</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../assets/styles/base.css">
+        <link rel="stylesheet" type="text/css" href="../assets/styles/container.css">
+        <link rel="stylesheet" type="text/css" href="../assets/styles/cat.css">
+        <meta name="viewport" content="width=device-width, initial-scale-1">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container -header">
+                <div class="header__logo">
+                    <p class="header__text">naebalovo.inc</p>
+                </div>
+                <div class="header__src">
+                    <input type="text" id="searchInput" placeholder="Поиск товаров" class="header__input">
+                </div>
+                <button class="header__cart" id="cartBtn">корзина</button>
+                <div class="cart__countt">
+                    <span id="cartCount" class="cart__count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="container -main">
+                <div class="main__left">
+                    <p class="main__text">Категории</p>
+                    <div class="main__cats"></div>
+                    <button id="resetFilterBtn" class="reset__btn">Сбросить фильтр</button>
+                </div>
+                <div class="hero__prod"></div>
+            </div>
+        </section>
+
+        <div id="cartModal" class="modal">
+            <div class="modal__content-border-wrap">
+                <div class="modal__content">
+                    <span class="close">&times;</span>
+                    <h2 class="cart__title">Корзина</h2>
+                    <div id="cartItems"></div>
+                    <div class="cart__bottom">
+                        <p id="totalPrice">Общая стоимость: 0 руб.</p>
+                        <button id="checkoutBtn" class="checkout__btn" style="display: none;">Перейти к оплате</button>
+                    </div>    
+                </div>
+            </div> 
+        </div>
+
+        <script type="text/javascript" src="../assets/scripts/hero.js"></script>
+        <script type="text/javascript" src="../assets/scripts/search.js"></script>
+    </body>
+</html>

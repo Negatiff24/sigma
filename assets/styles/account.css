@@ -50,7 +50,7 @@
 }
 
 .card-border-wrap {
-    width: 460px;
+    width: 560px;
     height: 700px;
     border-radius: 20px;
     padding: 5px;
@@ -60,7 +60,7 @@
 }
 
 .card {
-    width: 450px;
+    width: 550px;
     height: 690px;
     background-color: #222222;
     border-radius: 20px;
@@ -101,8 +101,71 @@
     margin-left: 20px;
 }
 
+.card__plus {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.plus {
+    position: relative;
+}
+
+.plus::after {
+    position: absolute;
+    left: -1px;
+    top: -2px;
+    content: '';
+    width: 41px;
+    height: 4px;
+    background-color: white;
+}
+
+.plus::before {
+    position: absolute;
+    left: 17px;
+    top: -19px;
+    content: '';
+    width: 4px;
+    height: 40px;
+    background-color: white;
+}
+
 .card__mid {
     width: 100%;
+}
+
+.card__midb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-container {
+    display: none;
+}
+
+.input__money {
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.input__btn {
+    background-color: #222222;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 40px;
+}
+
+.error-message {
+    color: red;
+    display: none;
+    margin-top: 10px;
 }
 
 .card__text, .card__money {
@@ -113,11 +176,70 @@
 .card__bottom {
     height: 50%;
     width: 100%;
+    
+}
+
+.card__bottomm {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card__bonus {
     font-size: 32px;
     color: white;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #222222;
+    margin: 15% auto;
+    padding: 20px;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.modal__text {
+    color: white;
+}
+
+.modal__btn {
+    color: white;
+    background: none;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 7px;
+}
+
+.selected-bonus {
+    font-size: 32px;
+    color: white;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @keyframes gradient {
