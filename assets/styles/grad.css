@@ -18,7 +18,7 @@
     transform: rotate(0deg);
  }
 
- .triangle__bottom {
+.triangle__bottom {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -30,19 +30,26 @@
     transform: rotate(0deg);
  }
 
- .container.-grad {
+.container.-grad {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
  }
 
- .grad__title {
+.grad__title {
     color: white;
     background: none;
     border-radius: 20px;
     border: 5px solid;
     font-size: 66px;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.grad__title:hover {
+    transform: scale(1.1);
 }
 
 @keyframes gradient {

@@ -125,6 +125,40 @@
     cursor: pointer;
 }
 
+.pay__bon {
+    display: flex;
+}
+
+.pay__checkbox {
+    margin-top: 1px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    background: rgba(0,241,255,1);
+    cursor: pointer;
+    position: relative;
+}
+
+.pay__checkbox:checked {
+    background: rgba(81,0,255,1);
+    border-color: #5a67d8;
+}
+
+.pay__checkbox:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
 .pay__bottom {
     display: flex;
     justify-content: space-between;

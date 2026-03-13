@@ -5,7 +5,7 @@ const products = [
         priceUnit: "за кг",
         category: "Мясо и птица",
         subcategory: "Говядина",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Тушка цыплёнка на зерновом откорме",
@@ -13,7 +13,7 @@ const products = [
         priceUnit: "за кг",
         category: "Мясо и птица",
         subcategory: "Птица",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Котлета Poroda Prime из молодого барашка на кости",
@@ -21,7 +21,7 @@ const products = [
         priceUnit: "за шт",
         category: "Мясо и птица",
         subcategory: "Баранина",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Колбаски из говядины Мираторг Чевапчичи",
@@ -29,7 +29,7 @@ const products = [
         priceUnit: "за шт",
         category: "Мясо и птица",
         subcategory: "Полуфрабрикат",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Ребра свиные",
@@ -37,7 +37,7 @@ const products = [
         priceUnit: "за кг",
         category: "Мясо и птица",
         subcategory: "Свинина",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Стейк Taurus Рибайе",
@@ -45,7 +45,7 @@ const products = [
         priceUnit: "за шт",
         category: "Мясо и птица",
         subcategory: "Говядина",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Вода Evian минеральная",
@@ -53,7 +53,7 @@ const products = [
         priceUnit: "за шт",
         category: "Соки, воды, напитки",
         subcategory: "Вода",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Добрый Cola, 1.5л",
@@ -61,7 +61,7 @@ const products = [
         priceUnit: "за шт",
         category: "Соки, воды, напитки",
         subcategory: "Газированные напитки",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Coca-Cola, 330мл",
@@ -69,7 +69,7 @@ const products = [
         priceUnit: "за шт",
         category: "Соки, воды, напитки",
         subcategory: "Газированные напитки",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Мохито освежающий безалкогольный, 450мл",
@@ -77,7 +77,7 @@ const products = [
         priceUnit: "за шт",
         category: "Соки, воды, напитки",
         subcategory: "Газированные напитки",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Сок Добрый Яблоко, 1л",
@@ -85,7 +85,7 @@ const products = [
         priceUnit: "за шт",
         category: "Соки, воды, напитки",
         subcategory: "Сок",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Напиток сокосодержащий Добрый из манго, 1л",
@@ -93,7 +93,7 @@ const products = [
         priceUnit: "за шт",
         category: "Соки, воды, напитки",
         subcategory: "Сок",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Сок Добрый Томат, 1л",
@@ -101,7 +101,7 @@ const products = [
         priceUnit: "за шт",
         category: "Соки, воды, напитки",
         subcategory: "Сок",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Сок Rich апельсиновый, 300мл",
@@ -109,7 +109,7 @@ const products = [
         priceUnit: "за шт",
         category: "Соки, воды, напитки",
         subcategory: "Сок",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Нектар Rich из апельсинов и манго для детского питания, 900мл",
@@ -117,7 +117,7 @@ const products = [
         priceUnit: "за шт",
         category: "Соки, воды, напитки",
         subcategory: "Сок",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Нектар Rich вишневый для детского питания, 900мл",
@@ -125,7 +125,7 @@ const products = [
         priceUnit: "за шт",
         category: "Соки, воды, напитки",
         subcategory: "Сок",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Вафли Яшкино Голландские с карамельной начинкой, 290г",
@@ -133,7 +133,7 @@ const products = [
         priceUnit: "за шт",
         category: "Шоколад, конфеты, сладости",
         subcategory: "Вафли",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Шоколад молочный Alpen Gold Орео со вкусом ванили и кусочками печенья, 90г",
@@ -141,7 +141,7 @@ const products = [
         priceUnit: "за шт",
         category: "Шоколад, конфеты, сладости",
         subcategory: "Шоколад",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Шоколад Alpen Gold молочный с фундуком, 80г",
@@ -149,7 +149,7 @@ const products = [
         priceUnit: "за шт",
         category: "Шоколад, конфеты, сладости",
         subcategory: "Шоколад",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Шоколад молочный Milka Bubbles пористый, 76г",
@@ -157,7 +157,7 @@ const products = [
         priceUnit: "за шт",
         category: "Шоколад, конфеты, сладости",
         subcategory: "Шоколад",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Конфеты Яшкино Чио Рио",
@@ -165,7 +165,7 @@ const products = [
         priceUnit: "за кг",
         category: "Шоколад, конфеты, сладости",
         subcategory: "Конфеты",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
     {
         name: "Конфеты Золотой Степ Славянка, 192г",
@@ -173,7 +173,7 @@ const products = [
         priceUnit: "за шт",
         category: "Шоколад, конфеты, сладости",
         subcategory: "Конфеты",
-        imageUrl: "../assets/img/vossen.jpg"
+        imageUrl: "../assets/img/placeholder.png"
     },
 ]
 
